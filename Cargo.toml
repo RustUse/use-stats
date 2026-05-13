@@ -1,0 +1,49 @@
+[workspace]
+members = [
+    "crates/use-stats",
+    "crates/use-average",
+    "crates/use-variance",
+    "crates/use-standard-deviation",
+    "crates/use-percentile",
+    "crates/use-z-score",
+    "crates/use-correlation",
+    "crates/use-distribution",
+]
+resolver = "2"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+publish = false
+readme = "README.md"
+repository = "https://github.com/RustUse/use-stats"
+rust-version = "1.95.0"
+version = "0.0.1"
+
+[workspace.dependencies]
+use-average = { version = "0.0.1", path = "crates/use-average" }
+use-variance = { version = "0.0.1", path = "crates/use-variance" }
+use-standard-deviation = { version = "0.0.1", path = "crates/use-standard-deviation" }
+use-percentile = { version = "0.0.1", path = "crates/use-percentile" }
+use-z-score = { version = "0.0.1", path = "crates/use-z-score" }
+use-correlation = { version = "0.0.1", path = "crates/use-correlation" }
+use-distribution = { version = "0.0.1", path = "crates/use-distribution" }
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-average",
+    "use-variance",
+    "use-standard-deviation",
+    "use-percentile",
+    "use-z-score",
+    "use-correlation",
+    "use-distribution",
+    "use-stats",
+]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"

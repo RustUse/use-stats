@@ -1,0 +1,75 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-average"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-variance"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-standard-deviation"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-percentile"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-z-score"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-correlation"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-distribution"
+release = true
+version_group = "rustuse-stats"
+
+[[package]]
+name = "use-stats"
+release = true
+version_group = "rustuse-stats"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+  "use-average",
+  "use-variance",
+  "use-standard-deviation",
+  "use-percentile",
+  "use-z-score",
+  "use-correlation",
+  "use-distribution",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+  { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+  { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+  { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+  { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+  { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+  { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+  { footer = "^changelog: ?ignore$", skip = true },
+  { message = "^.*", group = "Changed" },
+]

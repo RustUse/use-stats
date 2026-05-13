@@ -1,0 +1,14 @@
+[package]
+name = "use-average"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+description = "Small statistical average helpers over f64 slices."
+publish = true
+
+[lints]
+workspace = true

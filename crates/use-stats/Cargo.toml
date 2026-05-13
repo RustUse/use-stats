@@ -1,0 +1,30 @@
+[package]
+name = "use-stats"
+publish = true
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme = "README.md"
+rust-version.workspace = true
+description = "Composable statistical primitives for RustUse."
+documentation = "https://docs.rs/use-stats"
+keywords = ["statistics", "average", "percentile", "correlation"]
+categories = ["science", "mathematics"]
+
+[dependencies]
+use-average.workspace = true
+use-variance.workspace = true
+use-standard-deviation.workspace = true
+use-percentile.workspace = true
+use-z-score.workspace = true
+use-correlation.workspace = true
+use-distribution.workspace = true
+
+[lints]
+workspace = true
+
+[package.metadata.docs.rs]
+all-features = true
