@@ -1,17 +1,17 @@
 pub use use_average::{
-    arithmetic_mean, geometric_mean, harmonic_mean, moving_average, weighted_mean, AverageError,
+    AverageError, arithmetic_mean, geometric_mean, harmonic_mean, moving_average, weighted_mean,
 };
-pub use use_correlation::{covariance, pearson_correlation, CorrelationError};
+pub use use_correlation::{CorrelationError, covariance, pearson_correlation};
 pub use use_distribution::{
-    frequency_counts, histogram, max, min, range, DistributionError, HistogramBucket,
+    DistributionError, HistogramBucket, frequency_counts, histogram, max, min, range,
 };
 pub use use_percentile::{
-    median, percentile, percentile_rank, quartiles, PercentileError, Quartiles,
+    PercentileError, Quartiles, median, percentile, percentile_rank, quartiles,
 };
 pub use use_standard_deviation::{
-    population_standard_deviation, sample_standard_deviation, StandardDeviationError,
+    StandardDeviationError, population_standard_deviation, sample_standard_deviation,
 };
 pub use use_variance::{
-    population_variance, sample_variance, sum_squared_deviations, VarianceError,
+    VarianceError, population_variance, sample_variance, sum_squared_deviations,
 };
-pub use use_z_score::{normalize, z_score, ZScoreError};
+pub use use_z_score::{ZScoreError, normalize, z_score};

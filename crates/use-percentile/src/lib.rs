@@ -77,7 +77,7 @@ pub fn percentile_rank(values: &[f64], value: f64) -> Result<f64, PercentileErro
 
 #[cfg(test)]
 mod tests {
-    use super::{median, percentile, percentile_rank, quartiles, PercentileError, Quartiles};
+    use super::{PercentileError, Quartiles, median, percentile, percentile_rank, quartiles};
 
     fn approx_eq(left: f64, right: f64) {
         assert!((left - right).abs() < 1.0e-10, "left={left}, right={right}");

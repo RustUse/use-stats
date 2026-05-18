@@ -50,7 +50,7 @@ pub fn normalize(values: &[f64]) -> Result<Vec<f64>, ZScoreError> {
 
 #[cfg(test)]
 mod tests {
-    use super::{normalize, z_score, ZScoreError};
+    use super::{ZScoreError, normalize, z_score};
 
     fn approx_eq(left: f64, right: f64) {
         assert!((left - right).abs() < 1.0e-10, "left={left}, right={right}");

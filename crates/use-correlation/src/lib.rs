@@ -76,7 +76,7 @@ fn mean(values: &[f64]) -> f64 {
 
 #[cfg(test)]
 mod tests {
-    use super::{covariance, pearson_correlation, CorrelationError};
+    use super::{CorrelationError, covariance, pearson_correlation};
 
     fn approx_eq(left: f64, right: f64) {
         assert!((left - right).abs() < 1.0e-10, "left={left}, right={right}");

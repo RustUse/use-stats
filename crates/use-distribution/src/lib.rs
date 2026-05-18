@@ -114,7 +114,7 @@ pub fn histogram(
 
 #[cfg(test)]
 mod tests {
-    use super::{frequency_counts, histogram, max, min, range, DistributionError, HistogramBucket};
+    use super::{DistributionError, HistogramBucket, frequency_counts, histogram, max, min, range};
 
     #[test]
     fn computes_min_max_and_range() {

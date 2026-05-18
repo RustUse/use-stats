@@ -41,7 +41,7 @@ fn sum_squared_deviations(values: &[f64]) -> f64 {
 
 #[cfg(test)]
 mod tests {
-    use super::{population_standard_deviation, sample_standard_deviation, StandardDeviationError};
+    use super::{StandardDeviationError, population_standard_deviation, sample_standard_deviation};
 
     fn approx_eq(left: f64, right: f64) {
         assert!((left - right).abs() < 1.0e-10, "left={left}, right={right}");

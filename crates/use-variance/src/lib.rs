@@ -48,7 +48,7 @@ fn mean(values: &[f64]) -> f64 {
 
 #[cfg(test)]
 mod tests {
-    use super::{population_variance, sample_variance, sum_squared_deviations, VarianceError};
+    use super::{VarianceError, population_variance, sample_variance, sum_squared_deviations};
 
     fn approx_eq(left: f64, right: f64) {
         assert!((left - right).abs() < 1.0e-10, "left={left}, right={right}");

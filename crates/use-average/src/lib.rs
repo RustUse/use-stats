@@ -101,7 +101,7 @@ pub fn moving_average(values: &[f64], window_size: usize) -> Result<Vec<f64>, Av
 #[cfg(test)]
 mod tests {
     use super::{
-        arithmetic_mean, geometric_mean, harmonic_mean, moving_average, weighted_mean, AverageError,
+        AverageError, arithmetic_mean, geometric_mean, harmonic_mean, moving_average, weighted_mean,
     };
 
     fn approx_eq(left: f64, right: f64) {
