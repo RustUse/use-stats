@@ -4,27 +4,27 @@ version = 4
 
 [[package]]
 name = "use-average"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-correlation"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-distribution"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-percentile"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-standard-deviation"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-stats"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "use-average",
  "use-correlation",
@@ -37,8 +37,8 @@ dependencies = [
 
 [[package]]
 name = "use-variance"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "use-z-score"
-version = "0.0.1"
+version = "0.0.2"
