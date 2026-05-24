@@ -20,16 +20,16 @@ publish = false
 readme = "README.md"
 repository = "https://github.com/RustUse/use-stats"
 rust-version = "1.95.0"
-version = "0.0.1"
+version = "0.0.2"
 
 [workspace.dependencies]
-use-average = { version = "0.0.1", path = "crates/use-average" }
-use-variance = { version = "0.0.1", path = "crates/use-variance" }
-use-standard-deviation = { version = "0.0.1", path = "crates/use-standard-deviation" }
-use-percentile = { version = "0.0.1", path = "crates/use-percentile" }
-use-z-score = { version = "0.0.1", path = "crates/use-z-score" }
-use-correlation = { version = "0.0.1", path = "crates/use-correlation" }
-use-distribution = { version = "0.0.1", path = "crates/use-distribution" }
+use-average = { version = "0.0.2", path = "crates/use-average" }
+use-variance = { version = "0.0.2", path = "crates/use-variance" }
+use-standard-deviation = { version = "0.0.2", path = "crates/use-standard-deviation" }
+use-percentile = { version = "0.0.2", path = "crates/use-percentile" }
+use-z-score = { version = "0.0.2", path = "crates/use-z-score" }
+use-correlation = { version = "0.0.2", path = "crates/use-correlation" }
+use-distribution = { version = "0.0.2", path = "crates/use-distribution" }
 
 [workspace.metadata.rustuse.release]
 publish = false
